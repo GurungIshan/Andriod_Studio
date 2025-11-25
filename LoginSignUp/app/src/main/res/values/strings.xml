@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LoginSignUp</string>
+    <string name="logo">logo</string>
+    <string name="welcome_to_avengers_tower">Welcome to Avengers tower</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="signup">Signup</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">female</string>
+    <string name="other">other</string>
+
+    <string-array name="entries">
+        <item>Nepali</item>
+        <item>Indian</item>
+
+    </string-array>
+    <string name="terms_and_conditions">terms and conditions</string>
+</resources>

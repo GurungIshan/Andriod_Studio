@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ActivityLifecycleExample</string>
+    <string name="activity_lifecycle_example">Activity Lifecycle example</string>
+    <string name="second_activity">second_activity</string>
+    <string name="swap_actiivity">swap_actiivity</string>
+</resources>
