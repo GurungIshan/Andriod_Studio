@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Interest Calculation"
+        android:textSize="16dp"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+
+        />
+
+    <EditText
+        android:id="@+id/principalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+
+        />
+    <EditText
+        android:id="@+id/rateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rate"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+
+        />
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+
+        />
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="24dp"
+        />
+
+</LinearLayout>
