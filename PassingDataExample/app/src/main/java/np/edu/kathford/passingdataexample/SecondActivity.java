@@ -22,7 +22,7 @@ public class SecondActivity extends AppCompatActivity {
         mobilenoTextView = findViewById(R.id.mobilenoTextView);
         OKButton = findViewById(R.id.OkButton);
 
-        if (getIntent()!=null){ // not necessary
+//        if (getIntent()!=null){ // not necessary
             Intent intent = getIntent();
             String fullName = intent.getStringExtra("full_name");
             int age = intent.getIntExtra("age", 8);
@@ -41,7 +41,7 @@ public class SecondActivity extends AppCompatActivity {
                     finish();
                 }
             });
-        }
+//        }
 
     }
 }

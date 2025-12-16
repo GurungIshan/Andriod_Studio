@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText EditTextName, EditTextAge, EditTextMobileNo;
     private Button SubmitButton;
     private TextView resultTextView;
-    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
+//    @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
