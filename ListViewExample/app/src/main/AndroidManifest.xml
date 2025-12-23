@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ListViewExample" >
 
-        <activity android:name=".HomeActivity" android:exported="true">
+        <activity android:name=".screens.HomeActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".MovieGridViewActivity"/>
-        <activity android:name=".GridViewMovieActivity"/>
+        <activity android:name=".screens.MainActivity"/>
+        <activity android:name=".screens.MovieGridViewActivity"/>
+        <activity android:name=".screens.GridViewMovieActivity"/>
 
     </application>
 

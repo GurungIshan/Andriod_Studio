@@ -1,4 +1,4 @@
-package np.edu.kathford.listviewexample;
+package np.edu.kathford.listviewexample.screens;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import np.edu.kathford.listviewexample.R;
 
 public class MovieGridViewActivity extends AppCompatActivity {
     private GridView gridView;
