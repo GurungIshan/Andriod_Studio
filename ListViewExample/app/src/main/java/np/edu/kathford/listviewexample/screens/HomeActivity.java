@@ -44,7 +44,10 @@ public class HomeActivity extends AppCompatActivity {
         recyclerViewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent recyclerViewIntent = new Intent(
+                        HomeActivity.this, RecyclerViewExampleActivity.class
+                );
+                startActivity(recyclerViewIntent);
             }
         });
     }
