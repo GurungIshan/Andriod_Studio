@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentIdEditText"
+        android:hint="Student ID"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullNameEditText"
+        android:hint="Full Name"
+        android:layout_marginTop="8dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobilenumberEditText"
+        android:hint="Contact No"
+        android:inputType="phone"
+        android:layout_marginTop="8dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressEditText"
+        android:hint="Address"
+        android:layout_marginTop="8dp"
+
+        />
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add student"
+        android:layout_marginTop="18dp"
+        android:textAllCaps="false"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateButton"
+        android:text="Update student info"
+        android:textAllCaps="false"
+        android:layout_marginTop="18dp"
+
+        />
+
+</LinearLayout>
