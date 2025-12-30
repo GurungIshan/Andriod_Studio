@@ -4,6 +4,13 @@ public class Student {
     private int id;
     private String fullname;
 
+    private String address;
+    private String mobileNumber;
+
+//    private Student(){
+//
+//    }
+
     public Student(int id, String fullname, String mobileNumber, String address) {
         this.id = id;
         this.fullname = fullname;
@@ -42,8 +49,5 @@ public class Student {
     public void setAddress(String address) {
         this.address = address;
     }
-
-    private String mobileNumber;
-    private String address;
 
 }
