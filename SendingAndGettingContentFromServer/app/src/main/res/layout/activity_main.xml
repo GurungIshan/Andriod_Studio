@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/post_title"
         android:textColor="@color/black"
-        android:padding="10dp"
+        android:paddingTop="100dp"
         />
     <EditText
         android:id="@+id/messageEditText"

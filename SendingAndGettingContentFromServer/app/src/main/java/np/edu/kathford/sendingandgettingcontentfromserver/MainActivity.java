@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -46,17 +47,18 @@ public class MainActivity extends AppCompatActivity {
                 Call<PostResponse> result = apiService.createPost(request);
                 result.enqueue(new Callback<PostResponse>() {
                     @Override
-                    public void onResponse(Call<PostResponse> call, Response<PostResponse> response) {
+                    public void onResponse(Call<PostResponse> call, @NonNull Response<PostResponse> response) {
                         if (response.code()==201){
                             PostResponse postResponse = response.body();
 
-                            Toast.makeText(MainActivity.this, postResponse.getTitle()+""+postResponse.getId(), Toast.LENGTH_SHORT).show();
+                            assert postResponse != null;
+                            Toast.makeText(MainActivity.this, postResponse.getTitle()+" "+postResponse.getId(), Toast.LENGTH_LONG).show();
                         }
                     }
 
                     @Override
                     public void onFailure(Call<PostResponse> call, Throwable t) {
-                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
             }
