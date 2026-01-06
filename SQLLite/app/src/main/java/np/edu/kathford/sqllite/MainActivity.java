@@ -1,5 +1,6 @@
 package np.edu.kathford.sqllite;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,29 +10,36 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button addStudentButton, viewStudentButton;
+
+    private Button addStudentButton, listStudentButton;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addStudentButton = findViewById(R.id.addStudentButton);
-        viewStudentButton = findViewById(R.id.ListStudentButton);
+        addStudentButton=findViewById(R.id.addStudentButton);
+        listStudentButton=findViewById(R.id.ListStudentButton);
 
         addStudentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent addStudentIntent = new Intent(MainActivity.this,
+                Intent addStudentIntent=new Intent(MainActivity.this,
                         StudentFormActivity.class);
                 startActivity(addStudentIntent);
+
             }
         });
-        viewStudentButton.setOnClickListener(new View.OnClickListener() {
+
+        listStudentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent viewStudentIntent = new Intent(MainActivity.this,
+
+                Intent viewStudentIntent=new Intent(MainActivity.this,
                         StudentListActivity.class);
                 startActivity(viewStudentIntent);
+
             }
         });
+
     }
 }

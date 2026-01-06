@@ -1,21 +1,24 @@
 package np.edu.kathford.sqllite.models;
 
+import androidx.annotation.NonNull;
+
 public class Student {
     private int id;
-    private String fullname;
-
+    private String fullName;
     private String address;
     private String mobileNumber;
 
-//    private Student(){
-//
-//    }
+    public Student() {
+    }
 
-    public Student(int id, String fullname, String mobileNumber, String address) {
+    public Student(int id,
+                   String fullName,
+                   String address,
+                   String mobileNumber) {
         this.id = id;
-        this.fullname = fullname;
-        this.mobileNumber = mobileNumber;
+        this.fullName = fullName;
         this.address = address;
+        this.mobileNumber = mobileNumber;
     }
 
     public int getId() {
@@ -26,20 +29,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
-    }
-
-    public String getMobileNumber() {
-        return mobileNumber;
-    }
-
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getAddress() {
@@ -50,4 +45,20 @@ public class Student {
         this.address = address;
     }
 
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "" +
+                id +
+                fullName + '\'' +
+                address + '\'' +
+                mobileNumber + '\'';
+    }
 }
